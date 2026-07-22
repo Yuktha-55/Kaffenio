@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero-section{
+    width: 100%;
+    height: 70px;              /* Top section only */
+    background-color: rgb(172, 84, 3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section h1{
+    color: #e7e5e4e1;;
+    font-size: 2rem;
+    font-family: cursive;
+
+}
+/* Hamburger Icon */
+.menu-icon{
+    position:fixed;
+    top:20px;
+    left:20px;
+    font-size:35px;
+    cursor:pointer;
+    z-index:1001;
+    color:white;
+}
+
+/* Sidebar */
+.sidebar{
+    position:fixed;
+    top:0;
+    left:-250px;          /* Hidden */
+    width:250px;
+    height:100vh;
+    background:#943803;
+    padding-top:80px;
+    transition:0.4s;
+}
+
+/* Open when hovering over icon or sidebar */
+.menu-icon:hover + .sidebar,
+.sidebar:hover{
+    left:0;
+}
+
+.sidebar a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding:18px 30px;
+    font-size:20px;
+}
+
+.sidebar a:hover{
+    background:#d4a373;
+    color:#a54108;
+}
