@@ -1,22 +1,89 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <title>Kaffenio</title>
-    </head>
-    <body>
-        <section class="hero-section">
-            <h1>Kaffenio</h1>
-        </section>
-       <div class="menu-icon">☰</div>
 
-    <aside class="sidebar">
-        <a href="#">Home</a>
-        <a href="#">Menu</a>
-        <a href="#">Address</a>
-        <a href="#">Contact Us</a>
-    </aside>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kaffenio </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <!-- Logo -->
+        <a href="#home" class="logo" aria-label="Kaffenio home">
+            <img src="logo.png" alt="Kaffenio logo">
+            <span>Kaffenio</span>
+        </a>
+
+        <!-- Navigation -->
+        <nav class="navigation" id="site-navigation" aria-label="Primary navigation">
+            <a class="active" href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#story">Our story</a>
+            <a href="#visit">Visit us</a>
+        </nav>
+
+        <a class="header-action" href="#visit">Find a table <span aria-hidden="true">↗</span></a>
+        <button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-navigation">
+            <span></span><span></span>
+        </button>
+
+    </header>
+
+    <main id="home">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <p class="eyebrow">Coffee, thoughtfully made</p>
+                <h1 id="hero-title">A little more <em>ritual</em> in your day.</h1>
+                <p class="hero-description">Small-batch coffee, warm pastries, and a sunny corner to slow down in the heart of the city.</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#menu">Explore the menu <span aria-hidden="true">↓</span></a>
+                    <a class="text-link" href="#story">How we brew <span aria-hidden="true">→</span></a>
+                </div>
+                <div class="hero-note"><span class="pulse-dot"></span> Now serving our spring roast</div>
+            </div>
+            <div class="hero-visual" aria-label="Latte and coffee beans on a wooden table" role="img">
+                <div class="hero-badge"><strong>04</strong><span>years of<br>good coffee</span></div>
+                <div class="image-caption">House blend no. 04 <span>•</span> 2024</div>
+            </div>
+        </section>
+
+        <section class="intro-strip" aria-label="Kaffenio highlights">
+            <p>Roasted with care</p><span>✦</span><p>Served with intention</p><span>✦</span><p>Made for lingering</p><span>✦</span>
+        </section>
+
+        <section class="menu-section" id="menu" aria-labelledby="menu-title">
+            <div class="section-heading"><div><p class="eyebrow">The daily pour</p><h2 id="menu-title">Meet your new<br><em>usual.</em></h2></div><a class="text-link" href="#visit">View full menu <span aria-hidden="true">↗</span></a></div>
+            <div class="menu-grid">
+                <article class="menu-card featured-card"><div class="card-image card-image-latte"></div><div class="card-content"><div class="card-topline"><span>01</span><span>Signature</span></div><h3>Honey cinnamon latte</h3><p>Silky espresso, local honey, cinnamon cream.</p><strong>$6.50</strong></div></article>
+                <article class="menu-card"><div class="card-image card-image-filter"></div><div class="card-content"><div class="card-topline"><span>02</span><span>Slow bar</span></div><h3>Rwanda pour over</h3><p>Black tea, plum, and a soft citrus finish.</p><strong>$5.00</strong></div></article>
+                <article class="menu-card"><div class="card-image card-image-pastry"></div><div class="card-content"><div class="card-topline"><span>03</span><span>From the oven</span></div><h3>Almond morning bun</h3><p>Flaky, buttery, and baked fresh every morning.</p><strong>$4.25</strong></div></article>
+            </div>
+        </section>
+
+        <section class="story-section" id="story" aria-labelledby="story-title">
+            <div class="story-image" role="img" aria-label="Barista preparing a pour over coffee"></div>
+            <div class="story-copy"><p class="eyebrow">A good place to be</p><h2 id="story-title">Coffee is better<br>when it feels <em>personal.</em></h2><p>We source with curiosity, roast in small batches, and make every cup like you have nowhere else to be.</p><a class="button button-dark" href="#visit">Meet the team <span aria-hidden="true">→</span></a></div>
+        </section>
+
+        <section class="visit-section" id="visit" aria-labelledby="visit-title">
+            <div><p class="eyebrow">Come by soon</p><h2 id="visit-title">Your corner<br>is waiting.</h2></div>
+            <div class="visit-details"><p>18 Orchard Lane<br>Brooklyn, NY 11211</p><p>Mon–Fri 7am–6pm<br>Sat–Sun 8am–5pm</p><a href="mailto:hello@kaffenio.com">hello@kaffenio.com ↗</a></div>
+        </section>
+    </main>
+    <footer><a href="#home" class="logo"><img src="Logo.png" alt="Kaffenio logo"><span>Kaffenio</span></a><p>Good coffee for good days.</p><p>© 2024 Kaffenio</p></footer>
+    <script src="script.js"></script>
+
+</body>
+
 </html>
+```
